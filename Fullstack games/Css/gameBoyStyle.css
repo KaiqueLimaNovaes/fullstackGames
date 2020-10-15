@@ -1,0 +1,232 @@
+:root {
+    --yellow: #ecffad;
+    --blue: #d7eff1;
+    --stroke: #522438;
+    --green: #80dfa8;
+    --lightGreen: #e6fb9f;
+    --lightBrown: #a89e98;
+    --grey: #858585;
+}
+
+.gameboy {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+.gameboyBody {
+    background-color: var(--blue);
+    height: 550px;
+    width: 340px;
+    border-radius: 20px 20px 50px;
+    border: 4px solid var(--stroke);
+    box-shadow: inset 8px 0 rgba(255, 255, 255, 0.7), inset -6px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 20px;
+    border-bottom: 4px solid var(--stroke);
+    display: block;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
+header:after, header:before {
+    content: "";
+    height: 20px;
+    width: 4px;
+    background-color: var(--stroke);
+    position: absolute;
+}
+header:before {left: 30px;}
+header:after {right: 30px;}
+
+.screen {
+    width: 210px;
+    background-color: var(--lightBrown);
+    margin: 30px 0 0 30px;
+    border: 4px solid var(--stroke);
+    padding: 30px;
+    border-radius: 10px 10px 30px;
+}
+
+.screen .glass {
+    width: 100%;
+    height: 180px;
+    background-color: var(--green);
+    border: 2px solid var(--stroke);
+    box-shadow: inset 3px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.glass:after, .glass:before {
+    content: "";
+    height: 200%;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    transform: rotate(45deg);
+    top: -80px;
+}
+.glass:after {
+    right: -20px;
+    width: 50px;
+}
+
+.screen span {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(241, 89, 89);
+    position: absolute;
+    left: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--stroke);
+    top: 20%;
+    margin-top: 5px;
+}
+
+.action {
+    padding: 20px 20px 0;
+}
+
+.directions {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--stroke);
+    background-color: var(--blue);
+    position: relative;
+    display: flex;
+    box-shadow: inset 3px 3px rgba(0, 0, 0, 0.2);
+}
+.directions button {
+    border: 4px solid var(--stroke);
+    cursor: pointer;
+    background-color: var(--lightBrown);
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+}
+
+.bLeft {
+    border-right: none;
+    box-shadow: inset 3px 3px #fff;
+    top: 35px;
+    margin-top: -15px;
+    left: 9.5px;
+    position: relative;
+}
+.bTop {
+    border-bottom: none;
+    box-shadow: inset 3px 3px #fff;
+    top: 9.5px;
+    margin-left: -15px;
+    left: 35px;
+    position: relative;
+}
+.bRigth {
+    border-left: none;
+    box-shadow: inset 0 3px #fff;
+    top: 35px;
+    margin-top: -15px;
+    right: 9.5px;
+    position: relative;
+}
+.bBottom {
+    border-top: none;
+    box-shadow: inset 3px 0 #fff;
+    bottom: 9.5px;
+    margin-left: -15px;
+    left: 35px;
+    position: relative;
+}
+
+.buttonL {
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(--stroke);
+    padding: 8px 3px;
+    background-color: rgb(255, 41, 41);
+    border-radius: 100px;
+    position: relative;
+    box-shadow: inset 2px 2px #fff, 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    color: var(--stroke);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+.buttonS {
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(--stroke);
+    padding: 8px 3px;
+    background-color: rgb(255, 41, 41);
+    border-radius: 100px;
+    position: relative;
+    box-shadow: inset 2px 2px #fff, 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    color: var(--stroke);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+.start {
+    width: 8px;
+    height: 35px;
+    border: 2px solid var(--stroke);
+    padding: 8px 3px;
+    background-color: var(--grey);
+    border-radius: 100px;
+    position: relative;
+    transform: rotate(-120deg);
+    top: 30px;
+    float: right;
+    left: -10px;
+    box-shadow: inset -2px 2px #fff, -3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.select {
+    width: 8px;
+    height: 35px;
+    border: 2px solid var(--stroke);
+    padding: 8px 3px;
+    background-color: var(--grey);
+    border-radius: 100px;
+    position: relative;
+    transform: rotate(-120deg);
+    top: 30px;
+    float: left;
+    left: 10px;
+    box-shadow: inset -2px 2px #fff, -3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.wordScreen {
+    color: rgb(6, 114, 53);
+    width: 192px;
+}
+
+.wordName{
+    color: rgb(98, 84, 189);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+.wordGeneral {
+    color: var(--stroke);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    margin: 8px;  
+}

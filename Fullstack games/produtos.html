@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos - Full stack games</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <script src="./Js/funcoes.js"></script>
+</head>
+<body>
+    <!--Menu-->
+    <nav class="menu">
+        <a href="index.html"><img width="200px" src="./images/logo.png" alt="Logo full stack games"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="lojas.html">Lojas</a>
+        <a href="contato.html">Contato</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <!--Fim do menu-->
+    <h2>Produtos</h2>
+    <hr>
+            <section class="lista">
+                <h3>Categorias</h3>
+                <ol id="listaLinha">
+                    <li onclick="exibirTodos()">Todos (16)</li>
+                    <li onclick="exibirCategoria('consoles')">Consoles (5)</li>
+                    <li onclick="exibirCategoria('jogos')">Jogos (6)</li>
+                    <li onclick="exibirCategoria('acessorios')">Acessórios (3)</li>
+                    <li onclick="exibirCategoria('pc')">PC (2)</li>
+                </ol>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <!--Inicio produtos-->
+    <section>
+        
+            <div class="produtos" id="consoles">
+                <img src="./images/ps5.jpg" alt="ps5" width="150" onclick="destaque(this)">
+                <br>
+                <p>Playstation 5</p>
+                <hr>
+                <p><strike>R$5.990,00</strike></p>
+                <p class="preco">R$4.600,00</p>
+                <br><br>
+            </div>
+            
+            <div class="produtos" id="consoles">
+                <img src="./images/ps4.jpg" alt="ps4" width="150" onclick="destaque(this)">
+                <br>
+                <p>Playstation 4</p>
+                <hr>
+                <p><strike>R$2.990,00</strike></p>
+                <p class="preco">R$2.400,00</p>
+                <br><br>
+            </div>
+            
+            <div class="produtos" id="consoles">
+                <img src="./images/seriesX.jpg" alt="xbox series x" width="150" onclick="destaque(this)">
+                <br>
+                <p>Xbox series X</p>
+                <hr>
+                <p><strike>R$5.990,00</strike></p>
+                <p class="preco">R$4.990,00</p>
+                <br><br>
+            </div>
+            
+            <div class="produtos" id="consoles">
+                <img src="./images/seriesS.jpg" alt="xbox series s" width="150" onclick="destaque(this)">
+                <br>
+                <p>Xbox series S</p>
+                <hr>
+                <p><strike>R$3.990,00</strike></p>
+                <p class="preco">R$2.990,00</p>
+                <br><br>
+            </div>
+         
+        
+        
+            <div class="produtos" id="consoles">
+                <img src="./images/one.jpg" alt="xbox one" width="150" onclick="destaque(this)">
+                <br>
+                <p>Xbox one</p>
+                <hr>
+                <p><strike>R$2.990,00</strike></p>
+                <p class="preco">R$2.500,00</p>
+                <br><br>
+            </div>
+               
+            <div class="produtos" id="jogos">
+                <img src="./images/dsPs5.jpg" alt="demon souls ps5" width="150" onclick="destaque(this)">
+                <br>
+                <p>Demon Souls Ps5</p>
+                <hr>
+                <p><strike>R$399,00</strike></p>
+                <p class="preco">R$349,00</p>
+                <br><br>
+            </div>
+                
+            <div class="produtos" id="jogos">
+                <img src="./images/spPs5.jpg" alt="spider man ps5" width="150" onclick="destaque(this)">
+                <br>
+                <p>Spider man PS5</p>
+                <hr>
+                <p><strike>R$399,00</strike></p>
+                <p class="preco">R$349,00</p>
+                <br><br>
+            </div>
+                
+            <div class="produtos" id="jogos">
+                <img src="./images/scPs5.jpg" alt="sackboy ps5" width="150" onclick="destaque(this)">
+                <br>
+                <p>Sackboy Ps5</p>
+                <hr>
+                <p><strike>R$319,00</strike></p>
+                <p class="preco">R$299,00</p>
+                <br><br>
+            </div>
+        
+        
+        
+            <div class="produtos" id="jogos">
+                <img src="./images/cyPs4.jpg" alt="cyberpunk 2077 ps4" width="150" onclick="destaque(this)">
+                <br>
+                <p>Cyberpunk 2077 Ps4</p>
+                <hr>
+                <p><strike>R$299,00</strike></p>
+                <p class="preco">R$249,00</p>
+                <br><br>
+            </div>
+                
+            <div class="produtos" id="jogos">
+                <img src="./images/rd2Xbox.jpg" alt="red dead redemption xbox" width="150" onclick="destaque(this)">
+                <br>
+                <p>Red dead redemption 2 Xbox one</p>
+                <hr>
+                <p><strike>R$199,00</strike></p>
+                <p class="preco">R$149,00</p>
+                <br><br>
+            </div>
+                
+            <div class="produtos" id="jogos">
+                <img src="./images/pc3Xbox.jpg" alt="project cars 3 xbox" width="150" onclick="destaque(this)">
+                <br>
+                <p>Project cars 3 Xbox one</p>
+                <hr>
+                <p><strike>R$199,00</strike></p>
+                <p class="preco">R$169,00</p>
+                <br><br>
+            </div>
+                
+            <div class="produtos" id="acessorios">
+                <img src="./images/controleXboxSeries.jpg" alt="controle xbox series" width="150" onclick="destaque(this)">
+                <br>
+                <p>Controle Xbox series</p>
+                <hr>
+                <p><strike>R$599,00</strike></p>
+                <p class="preco">R$499,00</p>
+                <br><br>
+            </div>
+
+         
+          
+            <div class="produtos" id="acessorios">
+                <img src="./images/controlePs5.jpg" alt="controle ps5" width="150" onclick="destaque(this)">
+                <br>
+                <p>Controle Ps5</p>
+                <hr>
+                <p><strike>R$599,00</strike></p>
+                <p class="preco">R$499,00</p>
+                <br><br>
+            </div>
+                
+            <div class="produtos" id="acessorios">
+                <img src="./images/headsetPs5.jpg" alt="headset ps5" width="150" onclick="destaque(this)">
+                <br>
+                <p>headset Ps5</p>
+                <hr>
+                <p><strike>R$699,00</strike></p>
+                <p class="preco">R$599,00</p>
+                <br><br>
+            </div>
+                
+            <div class="produtos" id="pc">
+                <img src="./images/pcgamer.jpg" alt="pc gamer" width="150" onclick="destaque(this)">
+                <br>
+                <p>Pc gamer 16gb Gtx 1650</p>
+                <hr>
+                <p><strike>R$7.499,00</strike></p>
+                <p class="preco">R$6.790,00</p>
+                <br><br>
+            </div>
+                
+            <div class="produtos" id="pc">
+                <img src="./images/ngamer.jpg" alt="notebook gamer" width="150" onclick="destaque(this)">
+                <br>
+                <p>Notebook gamer Asus 8gb Gtx 1050</p>
+                <hr>
+                <p><strike>R$599,00</strike></p>
+                <p class="preco">R$499,00</p>
+                <br><br>
+            </div>
+        
+    </section>     
+   <!--Fim produtos-->
+<footer id="rodape">
+    <h4>Formas de pagamento</h4>
+    <p><img src="./images/fpagamentos.png" alt="Formas de pagamento"></p>
+    <p>&copy; Recode pro</p>
+</footer>
+</body>
+</html>
