@@ -8,13 +8,9 @@
 </head>
 <body>
     <!--Menu-->
-    <nav class="menu">
-        <a href="index.html"><img width="200px" src="./images/logo.png" alt="Logo full stack games"></a>
-        <a href="produtos.html">Produtos</a>
-        <a href="lojas.html">Lojas</a>
-        <a href="contato.html">Contato</a>
-        <a href="login.html">Login</a>
-    </nav>
+    <?php
+        include_once('menu.html');
+    ?>
     <!--Fim do menu-->
     <!--Login gameboy-->
     <main class="gameboy">
