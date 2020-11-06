@@ -30,6 +30,7 @@
     <meta charset="UTF-8">
     <title>Pedido - Full stack games</title>
     <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <!--Menu-->
@@ -39,29 +40,45 @@
     <!--Fim do menu-->
     <h2>Pedido</h2>
     <hr>
-    <form method="post" action="">
-        <h4>Cliente:</h4>
-        <input type="text" name="cliente" style="width: 400px;" placeholder="Digite seu nome ...">
-        <h4>Endereço:</h4>
-        <input type="text" name="endereco" style="width: 400px;" placeholder="Digite seu endereço ...">
-        <h4>Telefone:</h4>
-        <input type="number" name="telefone" style="width: 400px;" placeholder="Digite seu telefone ...">
-        <h4>Produto:</h4>
-        <input type="text" name="produto" style="width: 400px;" placeholder="Digite o produto ...">
-        <h4>Preço:</h4>
-        <input type="number" name="preco" style="width: 400px;" placeholder="Digite o preço ...">
-        <h4>Quantidade:</h4>
-        <input type="number" name="quantidade" style="width: 400px;" placeholder="Digite a quantidade ...">
-        <h4>Total:</h4>
-        <input type="number" name="preco_total" style="width: 400px;" placeholder="Digite o valor total ...">
-        <br><br>
-        <input type="submit" value="Enviar">
-    </form>
+    <div class="container">
+        <div>
+            <form method="post" action="">
+            <div class="form-group">
+                <h4>Cliente:</h4>
+                <input type="text" name="cliente" placeholder="Digite seu nome ..." class="form-control">
+            </div>
+            <div class="form-group">
+                <h4>Endereço:</h4>
+                <input type="text" name="endereco" placeholder="Digite seu endereço ..." class="form-control"> 
+            </div>
+            <div class="form-group">
+                <h4>Telefone:</h4>
+                <input type="number" name="telefone" placeholder="Digite seu telefone ..." class="form-control">
+            </div>
+            <div class="form-group">
+                <h4>Produto:</h4>
+                <input type="text" name="produto" placeholder="Digite o produto ..." class="form-control">
+            </div>
+            <div class="form-group">
+                <h4>Preço:</h4>
+                <input type="number" name="preco" placeholder="Digite o preço ..." class="form-control">
+            </div>
+            <div class="form-group">
+                <h4>Quantidade:</h4>
+                <input type="number" name="quantidade" placeholder="Digite a quantidade ..." class="form-control">
+            </div>
+            <div class="form-group">
+                <h4>Total:</h4>
+                <input type="number" name="preco_total" placeholder="Digite o valor total ..." class="form-control">
+            </div>
+            <br><br>
+            <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
     
-    <footer id="rodape">
-        <h4>Formas de pagamento</h4>
-        <p><img src="./images/fpagamentos.png" alt="Formas de pagamento"></p>
-        <p>&copy; Recode pro</p>
-    </footer>
+    <?php
+        include_once('footer.html');
+    ?>
 </body>
 </html>
