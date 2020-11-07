@@ -58,7 +58,7 @@
                             while ($rows = $result->fetch_assoc()){
                     ?>
                         <div class="produtos col-sm-12 col-md-4" id="<?php echo $rows["categoria"]; ?>">
-                            <img src="<?php echo $rows["imagem"]; ?>" alt="ps5" width="150" onclick="destaque(this)">
+                            <img src="<?php echo $rows["imagem"]; ?>" alt="ps5" width="150px" onclick="destaque(this)">
                             <br>
                             <p><?php echo $rows["descricao"]; ?></p>
                             <hr>
