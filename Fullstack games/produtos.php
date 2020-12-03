@@ -1,15 +1,4 @@
-<?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "fullstackgames";
 
-    $conn = mysqli_connect($servername, $username, $password, $database);
-
-    if (!$conn){
-        die("A conexão com o banco de dados falhou: ".mysqli_connect_error());
-    }
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -52,11 +41,13 @@
             <div class="container">
                 <div class="row">
                     <?php
-                        $sql = "select * from produtos";
-                        $result = $conn->query($sql);
-                    
-                        if ($result->num_rows > 0){
-                            while ($rows = $result->fetch_assoc()){
+                        $dados_json = file_get_contents("http://localhost/fullstack%20games/fullstack%20games/getContent.php?table=produtos");
+                        $dados = json_decode($dados_json, true);
+                        //print_r($dados);
+
+                        foreach ($dados as $key => $rows){
+                            //print_r($row);
+                            
                     ?>
                         <div class="produtos col-sm-12 col-md-4" id="<?php echo $rows["categoria"]; ?>">
                             <img src="<?php echo $rows["imagem"]; ?>" alt="ps5" width="150px" onclick="destaque(this)">
@@ -68,9 +59,6 @@
                             <br><br>
                         </div>
                     <?php
-                            }
-                        }else{
-                            echo "Nenhum produto cadastrado!";
                         }
                     ?>
                 </div>
